@@ -11,7 +11,7 @@ class TfDrift < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/brunobrise/tf-drift/releases/download/v1.0.0/tf-drift_1.0.0_darwin_amd64.tar.gz"
-      sha256 "da5cc9d673afaf2fab74b9d331c8d3f5e6a712a27e9351e16935bc51debfd9b0"
+      sha256 "f3306faa9a09c655d4415195a29e37b412501d6641063d550fc802d4b20a58ca"
 
       define_method(:install) do
         bin.install "tf-drift"
@@ -19,7 +19,7 @@ class TfDrift < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/brunobrise/tf-drift/releases/download/v1.0.0/tf-drift_1.0.0_darwin_arm64.tar.gz"
-      sha256 "d9994d77e31015c96fcaac9ffb0c01c13bb16262b14223efc6413068a15ac1ea"
+      sha256 "a57af8845fafc57099ad6ed5eab8b3d44726bb67e86b2d6051b0d03a424292dd"
 
       define_method(:install) do
         bin.install "tf-drift"
@@ -30,14 +30,14 @@ class TfDrift < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/brunobrise/tf-drift/releases/download/v1.0.0/tf-drift_1.0.0_linux_amd64.tar.gz"
-      sha256 "1569268cbf5b20414ef3511ee2b1e728a664aaa71c822dfd66c4e408a7aed640"
+      sha256 "8776103e097510e67115f56baf86e533b0c808debc9601c828858742a222f505"
       define_method(:install) do
         bin.install "tf-drift"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/brunobrise/tf-drift/releases/download/v1.0.0/tf-drift_1.0.0_linux_arm64.tar.gz"
-      sha256 "523f1bf5b9988f2b20a51ea50b907aab0e05d8d58f8ce4aabe95441a1cdc798e"
+      sha256 "cb03b102995285ef47137febeb0ba605aaa8f4061b3be21b1c054dd503af5aa0"
       define_method(:install) do
         bin.install "tf-drift"
       end
