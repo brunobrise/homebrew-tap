@@ -5,21 +5,21 @@
 class TfDrift < Formula
   desc "Go utility to detect, filter, and inspect configuration drift across multi-layered Terraform workspaces."
   homepage "https://github.com/brunobrise/tf-drift"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/brunobrise/tf-drift/releases/download/v1.1.0/tf-drift_1.1.0_darwin_amd64.tar.gz"
-      sha256 "1b9b72c375ff077bb3a952184ffb444bf24c2e464ea43b405c114ba9aff5ee26"
+      url "https://github.com/brunobrise/tf-drift/releases/download/v1.2.0/tf-drift_1.2.0_darwin_amd64.tar.gz"
+      sha256 "34f29114be809c3bd4d30c4cdfc2a30dad3d9ed8e8a3b0587038963ad055ad3a"
 
       define_method(:install) do
         bin.install "tf-drift"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/brunobrise/tf-drift/releases/download/v1.1.0/tf-drift_1.1.0_darwin_arm64.tar.gz"
-      sha256 "ce6eee200a0653c9eba39d942a3a5beb769fa4ba7b1ad0d999ce829cac93d83d"
+      url "https://github.com/brunobrise/tf-drift/releases/download/v1.2.0/tf-drift_1.2.0_darwin_arm64.tar.gz"
+      sha256 "fa8ec445cffbc23579bef307f9378189e16d8e4b46ce671108ccc1935ebe6c1c"
 
       define_method(:install) do
         bin.install "tf-drift"
@@ -29,15 +29,15 @@ class TfDrift < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brunobrise/tf-drift/releases/download/v1.1.0/tf-drift_1.1.0_linux_amd64.tar.gz"
-      sha256 "1264b274943af16c1d61f2a13b61b62adafac757a7567f03b7a707fbfa3ab68e"
+      url "https://github.com/brunobrise/tf-drift/releases/download/v1.2.0/tf-drift_1.2.0_linux_amd64.tar.gz"
+      sha256 "308774daacafdd1e515df8a65f923c83d2e9d043db3838ec4880b1243f316a37"
       define_method(:install) do
         bin.install "tf-drift"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brunobrise/tf-drift/releases/download/v1.1.0/tf-drift_1.1.0_linux_arm64.tar.gz"
-      sha256 "353dd3e07636e517f705673f506c2ad19635980d95c14db54a028c6465d70c51"
+      url "https://github.com/brunobrise/tf-drift/releases/download/v1.2.0/tf-drift_1.2.0_linux_arm64.tar.gz"
+      sha256 "8efceaba9171652de8ca549b4bdfde368af5c13a51c8a6bc65eee605f489e70d"
       define_method(:install) do
         bin.install "tf-drift"
       end
